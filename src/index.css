@@ -20,11 +20,53 @@ body {
   background-color: #122443;
 }
 .input-gift {
-  width: 22%;
   height: auto;
   transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 320px) {
+  .input-gift {
+    width: 25%;
+  }
+  input::placeholder {
+    opacity: 1; /* Hace el placeholder invisible */
+    visibility: hidden;
+  }
+}
+@media (min-width: 375px) {
+  .input-gift {
+    width: 73%;
+  }
+  input::placeholder {
+    opacity: 0; /* Hace el placeholder invisible */
+    visibility: visible;
+  }
+}
+@media (min-width: 425px) {
+  .input-gift {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .input-gift {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .input-gift {
+    width: 28%;
+  }
+}
+@media (min-width: 1336px) {
+  .input-gift {
+    width: 22%;
+  }
 }
 .input-gift:hover {
   width: 100%;
   transition: all 0.5s ease-in-out;
+  input::placeholder {
+    opacity: 1; /* Hace el placeholder invisible */
+    visibility: visible;
+  }
 }

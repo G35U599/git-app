@@ -59,7 +59,6 @@ body {
 }
 @media (min-width: 1336px) {
   .input-gift {
-    width: 22%;
   }
 }
 .input-gift:hover {
